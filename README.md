@@ -7,7 +7,7 @@ B2C Smart Ads | B2B Invoices with UncleSamAI powered by Rapyd
 [Video Demo](https://youtu.be/D2Ts9fAbPeM)
 
 #### working Demo
-[https://www.b2brapyd.web.app](https://www.b2brapyd.web.app)
+[https://b2brapyd.web.app](https://b2brapyd.web.app)
 
 ## Elevator Pitch
 
