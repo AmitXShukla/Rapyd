@@ -4,9 +4,29 @@ A Complete Payment solution to create B2C Smart Ads | B2B Invoices with Tax Anal
 ## Project Name
 B2C Smart Ads | B2B Invoices with UncleSamAI powered by Rapyd
 
+[Video Demo](https://youtu.be/D2Ts9fAbPeM)
+
+#### working Demo
+[https://www.b2brapyd.web.app](https://www.b2brapyd.web.app)
+
 ## Elevator Pitch
 
-## About this Project
+#### B2B
+- do your customers love your Tiny ads, but scared of PoP-Up Monsters?
+- do your customers lack trust/avoid using your payments methods & wonder if your solution is PCI DSS compliant?
+- do you want to have dynamic ads interfaces?
+- do you like your business to accept payments from 100+ countries?
+- do you like add no-code payment api in your ad?
+- do you want to manage all your customer ads from one place?
+
+#### B2C
+- do you want Invoice with payments method built in?
+- do you want your clients to pay on time?
+- do you like your business to accept payments from 100+ countries?
+- do you like to add no-code PCI DSS compliant payment payment methods in your invoice?
+- do you want to offer BUY NOW PAY LATER in your invoice?
+- do you want to manage all your invoices & revenue from one place?
+- do you want to have dynamic invoice interfaces?
 
 ## Project Structure
 ```ts
@@ -29,7 +49,6 @@ FILESs
 [<img src="https://github.com/AmitXShukla/AmitXShukla.github.io/blob/master/assets/icons/medium.svg" width=40 height=50>](https://medium.com/@Amit_Shukla)
 [<img src="https://github.com/AmitXShukla/AmitXShukla.github.io/blob/master/assets/icons/twitter_1.svg" width=40 height=50>](https://twitter.com/ashuklax)
 
-<a href="https://www.youtube.com/playlist?list=PLp0TENYyY8lHNMTAlrfVQKzAvQo3yzHYk">Click here for Video Description !</a>
 <br/>
 
 ``` ts
