@@ -1,0 +1,30 @@
+<mat-toolbar color="amber">
+    <mat-toolbar-row>
+        <button mat-mini-fab color="warn" [matMenuTriggerFor]="rootMenu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #rootMenu="matMenu">
+            <div mat-subheader>
+                <button mat-menu-item routerLink="/aboutus">
+                    <mat-icon class="circle-link example-icon-link">dashboard</mat-icon>Dashboard
+                </button>
+            </div>
+        </mat-menu>
+        <mat-icon class="example-icon">{{ imageUrl }}</mat-icon>
+        <span matTooltip="About us">{{ pageTitle }}</span><span class="example-spacer"></span>
+        <span matTooltip="Update Settings"><button mat-icon-button routerLink="/login">
+                <mat-icon>settings</mat-icon>
+            </button></span>
+        <span matTooltip="Help" [matMenuTriggerFor]="helpMenu">
+            <button mat-icon-button>
+                <mat-icon>help</mat-icon>
+            </button>
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #helpMenu="matMenu">
+    <span class="helpText">{{ helpType == "about" ? configData.about : ""}}</span>
+    <span class="helpText">{{ helpType == "login" ? configData.login : ""}}</span>
+    <span class="helpText">{{ helpType == "ad" ? configData.ad : ""}}</span>
+    <span class="helpText">{{ helpType == "invoice" ? configData.invoice : ""}}</span>
+</mat-menu>

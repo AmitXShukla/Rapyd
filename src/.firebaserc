@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "b2brapyd": {
+      "hosting": {
+        "src": [
+          "b2brapyd"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "b2brapyd"
+  }
+}

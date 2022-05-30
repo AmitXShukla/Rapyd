@@ -1,0 +1,17 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image1 {
+    background-image: url('../../assets/b2c.png');
+    background-size: cover;
+}
+
+.example-header-image2 {
+    background-image: url('../../assets/b2bc.png');
+    background-size: cover;
+}

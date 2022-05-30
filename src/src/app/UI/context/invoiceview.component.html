@@ -1,0 +1,53 @@
+<app-header imageUrl="send" pageTitle="Smart Invoice view" helpType="invoice"></app-header>
+<mat-card class="example-card" [@fallIn]='state'>
+    <mat-card-content *ngIf="toggleAd else displayAd">
+        <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+            {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+        </button> -->
+        <mat-stepper [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+                <form [formGroup]="firstFormGroup">
+                    <ng-template matStepLabel>name</ng-template>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="please fill in your name" formControlName="firstCtrl" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperNext>Next</button>
+                        <span class="med-spacer"></span>
+                        <span matTooltip="back">
+                            <mat-icon color="warn" (click)="toggleAd = !toggleAd">close</mat-icon>
+                        </span>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+                <form [formGroup]="secondFormGroup">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY" required>
+                    </mat-form-field>
+                    <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button matStepperNext>Next</button>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Pay</ng-template>
+                <iframe [src]="_url" width="500px" height="400px">
+                </iframe>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button (click)="stepper.reset(); toggleAd = !toggleAd">Reset</button>
+                </div>
+            </mat-step>
+        </mat-stepper>
+    </mat-card-content>
+</mat-card>
+<ng-template #displayAd>
+
+    <mat-icon color="warn" routerLink="/ad">close</mat-icon>
+    <br /><br />
+    <span (click)="toggleAd = !toggleAd"><img src="{{this.docUrl | async}}"></span>
+</ng-template>

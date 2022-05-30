@@ -1,0 +1,52 @@
+<app-header imageUrl="home" pageTitle="B2B/C Rapyd Solutions" helpType="about"></app-header>
+<mat-tab-group mat-align-tabs="start">
+    <mat-tab label="B2C">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image1"></div>
+                <mat-card-title>Smart Ads/Payment</mat-card-title>
+                <mat-card-subtitle>Business to Customers solutions</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-selection-list #ansC>
+                    <mat-list-option *ngFor="let ques of b2cQuestions">
+                        {{ques}}
+                    </mat-list-option>
+                </mat-selection-list>
+
+                <p>
+                    <span class="middle-headline">Yes: {{ansC.selectedOptions.selected.length}}</span>
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button color="primary" [routerLink]="['/ad']">START HERE</button>
+                <!-- <button mat-button>SHARE</button> -->
+            </mat-card-actions>
+        </mat-card>
+
+    </mat-tab>
+    <mat-tab label="B2B">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image2"></div>
+                <mat-card-title>Smart Invoices/Payment</mat-card-title>
+                <mat-card-subtitle>Business to Customers solutions</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-selection-list #ansB>
+                    <mat-list-option *ngFor="let ques of b2bQuestions">
+                        {{ques}}
+                    </mat-list-option>
+                </mat-selection-list>
+
+                <p>
+                    <span class="middle-headline">Yes: {{ansB.selectedOptions.selected.length}}</span>
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button color="primary" [routerLink]="['/invoice']">START HERE</button>
+                <!-- <button mat-button>SHARE</button> -->
+            </mat-card-actions>
+        </mat-card>
+    </mat-tab>
+</mat-tab-group>
